@@ -1,0 +1,39 @@
+.create-Tweet{
+  margin-top: 60px;
+  border: 3px solid #545149;
+  height: 230px;
+  padding: 10px;
+}
+.userImage{
+  height: 40px;
+}
+.name{
+  margin-left: 10px;
+
+}
+.email{
+  float: right;
+  color: lightgrey;
+}
+.usertweet{
+margin-top:40px;
+}
+.show-Tweets{
+  border:none;
+  border-bottom: 3px solid #545149;
+  background-color:#f4f1ec;
+  width: 100%;
+  margin:0 auto;
+}
+
+.tweetFooter{
+  font-size: 20px;
+
+}
+.reactions{
+  float: right;
+}
+.reactions i:hover{
+  color:gold;
+  cursor: pointer;
+}

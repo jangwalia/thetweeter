@@ -1,0 +1,28 @@
+.logo{
+  font-family: "Bungee",sans-serif;
+  margin-left: 1.5em;
+}
+.navbar{
+  background-color: #4056A1;
+  color: #ffffff;
+  padding: 30px;
+  font-size: 33px;
+  height: 100px;
+  width: 100%;
+  z-index: 100;
+  position: fixed;
+  top: 0px;
+  
+  
+}
+.tweet{
+  font-size: 22px;
+  float: right;
+  margin-right: 1.5em;
+}
+.arrow{
+  float: right;
+  font-size: 20px;
+  color:tomato;
+  margin-right : 72px;
+}
