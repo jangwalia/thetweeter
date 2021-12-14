@@ -8,7 +8,7 @@ $(document).ready(function(){
         data: data,
         datatype: "json",
         success: function(msg){
-          alert( "Data Saved: " + msg );
+          
           $('#tweet-text').val('');
     },
     error: function() {

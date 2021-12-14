@@ -9,7 +9,7 @@ $(document).ready(function(){
  const renderTweet = function(collections){
       collections.forEach(element => {
         const $tweet =  createTweetElement(element);
-        return $('.tweet-container').append($tweet);
+        return $('.tweet-container').prepend($tweet);
         
       })
       
@@ -20,10 +20,10 @@ $(document).ready(function(){
         renderTweet(res);
       })
     }
-    loadTweets();
+    
   
     const createTweetElement = function(newtweet){
-      const $tweet = $(`<article class = "create-Tweet"> <header class = "tweet-header">
+      const $freshTweet = $(`<article class = "create-Tweet"> <header class = "tweet-header">
       <img class = "userImage" src="${newtweet.user.avatars}" alt="user image"><span class = "name">${newtweet.user.name}</span><span class = "email">${newtweet.user.handle}</span>
     </header>
     <div class="usertweet">
@@ -35,9 +35,27 @@ $(document).ready(function(){
       </div>
     </footer>
     </article></article>`);
-    return $tweet;
+    return $freshTweet;
     }
+    $( "#form" ).submit(function( event ) {
+      event.preventDefault();
+      const data =  $( this ).serialize();
+      $.ajax({
+          type: "POST",
+          url: '/tweets',
+          data: data,
+          datatype: "json",
+          success: function(msg){
+            loadTweets(msg);
+            $('#tweet-text').val('');
+      },
+      error: function() {
+         alert("please enter tweet");
+      }
+         
+      });
     
+    });
     
  })
 
