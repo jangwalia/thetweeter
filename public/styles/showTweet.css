@@ -1,10 +1,10 @@
-.create-Tweet{
+article{
   margin-top: 60px;
   border: 3px solid #545149;
   height: 230px;
   padding: 10px;
 }
-.userImage{
+article header img{
   height: 40px;
 }
 .name{
@@ -15,7 +15,7 @@
   float: right;
   color: lightgrey;
 }
-.usertweet{
+article .tweetBody{
 margin-top:40px;
 }
 .show-Tweets{
@@ -26,7 +26,7 @@ margin-top:40px;
   margin:0 auto;
 }
 
-.tweetFooter{
+article footer{
   font-size: 20px;
 
 }
