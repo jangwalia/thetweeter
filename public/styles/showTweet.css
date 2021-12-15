@@ -18,6 +18,16 @@ article header img{
 article .tweetBody{
 margin-top:40px;
 }
+.error{
+  border:3px solid red;
+  height: 80px;
+  color: tomato;
+  display: flex;
+  text-align: center;
+  justify-content: space-around;
+  padding: 20px;
+  display: none;
+}
 .show-Tweets{
   border:none;
   border-bottom: 3px solid #545149;

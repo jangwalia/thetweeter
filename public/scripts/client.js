@@ -6,8 +6,14 @@
  * Reminder: Use (and do all your DOM work in) jQuery's document ready function
  */
 $(document).ready(function(){
- 
- 
+
+
+//ERROR OBJECT////////
+ const error = {
+   nullError : "please enter a tweet...!!",
+  
+ }
+ // SHOW ALL TWEETS /////////////
   const renderTweet = function(collections){
       collections.forEach(element => {
         const $tweet =  createTweetElement(element);
@@ -16,16 +22,26 @@ $(document).ready(function(){
       })
       
     }
+    //  AJAX GET REQUEST /////////////
     const loadTweets = function(){
      $.ajax('/tweets',{method : 'GET'})
       .then((res)=>{
         renderTweet(res);
       })
     }
+    //ERROR ELEMENT
     
-  
+      const $errorElement = $(`<div class = "error" >`);
+      const $errorsign1 = $(`<i class="fas fa-exclamation-triangle fa-lg"></i>`)
+      const $errormessage = $(`<span>`);
+      const $errorsign2 = $(`<i class="fas fa-exclamation-triangle fa-lg"></i>`);
+      const $errordetail = $errorElement.append($errorsign1,$errormessage,$errorsign2);
+      $('.container').prepend($errordetail);
+      
+    
+    
+  //               CREATE NEW TWEET              ////////
     const createTweetElement = function(newtweet){
-
       const $article = $(`<article>`);
       const $header = $(`<header>`);
       const $img = $(`<img src = "${newtweet.user.avatars}" alt = "user Image">`);
@@ -43,6 +59,8 @@ $(document).ready(function(){
       return $newTweet;
 
     }
+  //  SUBMIT THE FORM--POST REQUEST //////////////
+
     $( "#form" ).submit(function( event ) {
       event.preventDefault();
       const data =  $( this ).serialize();
@@ -55,14 +73,14 @@ $(document).ready(function(){
             loadTweets();
             $('#form')[0].reset();
       },
-      error: function() {
-         alert("please enter tweet");
+      error: function(){
+        $errormessage.text(error.nullError);
+        $('.error').slideDown();
       }
-         
-      });
+    });
       
     });
     
- })
+})
 
 

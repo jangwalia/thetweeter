@@ -1,15 +1,16 @@
 $(document).ready(function() {
-  // --- our code goes here ---
- 
+  
+
   $('#tweet-text').on('input',function(){
     const value = $(this).val().length;
-    let result =  140 - value;
+    let result =  20 - value;
     
     if(result > 0){
       $('.counter').text(result);
     }
     else{
-      alert('Your word limit is over...!!')
+      $('.error span').text("make sure the tweet is under 140 characters..!!")
+      $('.error').slideDown();
       $('.counter').addClass('lessthenOne');
       $('.counter').text(result);
     }
