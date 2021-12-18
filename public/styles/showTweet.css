@@ -3,6 +3,11 @@ article{
   border: 3px solid #545149;
   height: 230px;
   padding: 10px;
+  
+  
+}
+article:hover{
+  box-shadow: 10px 5px 5px gold;
 }
 article header img{
   height: 40px;
@@ -17,6 +22,7 @@ article header img{
 }
 article .tweetBody{
 margin-top:40px;
+
 }
 .error{
   border:3px solid red;

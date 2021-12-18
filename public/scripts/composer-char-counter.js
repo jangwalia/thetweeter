@@ -3,7 +3,7 @@ $(document).ready(function() {
 
   $('#tweet-text').on('input',function(){
     const value = $(this).val().length;
-    let result =  20 - value;
+    let result =  140 - value;
     
     if(result > 0){
       $('.counter').text(result);

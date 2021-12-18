@@ -42,7 +42,7 @@ $(document).ready(function(){
     
   //               CREATE NEW TWEET              ////////
     const createTweetElement = function(newtweet){
-      const $article = $(`<article>`);
+      const $article = $(`<article id = "myTweet">`);
       const $header = $(`<header>`);
       const $img = $(`<img src = "${newtweet.user.avatars}" alt = "user Image">`);
       const $name = $(`<span class = "name">`).text(newtweet.user.name);
