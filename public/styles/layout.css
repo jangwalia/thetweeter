@@ -22,8 +22,11 @@ body {
   
 }
 
-.lessthenOne{
+.lessthanOne{
   color : red;
+}
+.morethanOne{
+  color: #545149;
 }
 
 /*
