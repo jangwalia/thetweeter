@@ -1,5 +1,82 @@
-article{
-  margin-top: 60px;
+@media (min-width: 768px){
+  .tweet-container{
+    margin-top:13em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 100%;
+    
+  }
+  article{
+    margin-top:3em;
+    border: 3px solid #545149;
+    height: 230px;
+    padding: 10px;
+    
+    
+    
+  }
+  article:hover{
+    box-shadow: 10px 5px 5px gold;
+  }
+  article header img{
+    height: 40px;
+  }
+  .name{
+    margin-left: 10px;
+  
+  }
+  .email{
+    float: right;
+    color: lightgrey;
+  }
+  article .tweetBody{
+  margin-top:40px;
+  
+  }
+  .error{
+    border:3px solid red;
+    height: 80px;
+    color: tomato;
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+    padding: 20px;
+    display: none;
+  }
+  .show-Tweets{
+    border:none;
+    border-bottom: 3px solid #545149;
+    background-color:#f4f1ec;
+    width: 100%;
+    margin:0 auto;
+  }
+  
+  article footer{
+    font-size: 20px;
+  
+  }
+  .reactions{
+    float: right;
+  }
+  .reactions i:hover{
+    color:gold;
+    cursor: pointer;
+  }
+}
+
+@media (min-width: 1024px){
+  .tweet-container{
+    margin-top: 400px;
+    margin-left: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 50%;
+    
+  }
+  article{
+  margin-top:3em;
   border: 3px solid #545149;
   height: 230px;
   padding: 10px;
@@ -52,4 +129,5 @@ article footer{
 .reactions i:hover{
   color:gold;
   cursor: pointer;
+}
 }

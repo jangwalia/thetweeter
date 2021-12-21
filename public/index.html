@@ -23,7 +23,7 @@
 
     <!-- App JS -->
     <!-- <script src="scripts/postTweet.js"></script> -->
-    /<script src="scripts/composer-char-counter.js"></script>
+    <script src="scripts/composer-char-counter.js"></script>
     <script type="text/javascript" src="scripts/client.js"></script>
     
   </head>
@@ -33,36 +33,33 @@
     <nav class = "navbar">
       <span class =  "logo">My tweeter</span>
       <span class = "tweet"><b>Write</b> a new tweet</span> <br> 
-       <span class = "arrow"> <i class="fas fa-angle-double-down"></i></span>
+       <span class = "arrow"><i class="fas fa-angle-double-down"></i></span>
       
     </nav>
-    <header class = "header">
-      <div>
-          <img src="/images/profile-hex.png"> 
-      </div>
-      <br>
-      <div>
-          <h2>Your Name</h2>
-      </div>
-  </header>
-
-    <!-- Page-specific (main) content here -->
-    <main class="container">
-     <section class="new-tweet">
-        <h2>Compose Tweet</h2>
-        <form id = "form">
-          <label for="tweet-text"><strong> What are you humming about? </strong></label><br>
-          <textarea name="text" class = "write-tweet" id="tweet-text"></textarea>
-          <div class = "tweet-detail">
-            <button class = "btn" type="submit">Tweet</button>
-            <output name="counter" class="counter" id = "count" for="tweet-text">140</output>
-          </div>
-        </form>
-      </section>
-      <section class = "tweet-container" >
+    
+      <header class = "header">
+        <div class = "header-content">
+            <img src="/images/profile-hex.png"><br>
+            <h2 class = "myName">User Name</h2>
+        </div>
       
-      </section>
-    </main>
-   
-  </body>
+       
+       </header>
+  
+      <!-- Page-specific (main) content here -->
+      
+        <section class="new-tweet">
+            <form id = "form">
+              <label for="tweet-text"><strong> What are you humming about? </strong></label><br>
+              <textarea name="text" class = "write-tweet" id="tweet-text"></textarea>
+              <div class = "tweet-detail">
+                <button class = "btn" type="submit">Tweet</button>
+                <output name="counter" class="counter" id = "count" for="tweet-text">140</output>
+              </div>
+            </form>
+          </section>
+          <section class = "tweet-container" >
+        
+        </section>
+      </body>
 </html>

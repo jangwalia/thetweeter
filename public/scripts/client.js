@@ -36,11 +36,12 @@ $(document).ready(function(){
       const $errormessage = $(`<span>`);
       const $errorsign2 = $(`<i class="fas fa-exclamation-triangle fa-lg"></i>`);
       const $errordetail = $errorElement.append($errorsign1,$errormessage,$errorsign2);
-      $('.container').prepend($errordetail);
+      $('.new-tweet').prepend($errordetail);
       
     
     
   //               CREATE NEW TWEET              ////////
+    
     const createTweetElement = function(newtweet){
       const $article = $(`<article id = "myTweet">`);
       const $header = $(`<header>`);

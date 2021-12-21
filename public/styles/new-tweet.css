@@ -1,15 +1,59 @@
+@media(min-width:768px){
+  .new-tweet{
+    position: absolute;
+    order:2;
+    margin-top:3em;
+    padding: 3em;
+    width:90%;
+    font-family: "Source Sans Pro" , sans-serif;
+  }
+  .new-tweet .error{
+    display: none;
+  }
+  .write-tweet{
+    border:none;
+    border-bottom: 3px solid #545149;
+    background-color: #f4f1ec;
+    width:60%;
+  }
+  .tweet-detail{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .btn{
+    
+    font-family: "Bungee",sans-serif;
+    background-color: #4056A1;
+    color: beige;
+  }
+  .counter{
+    
+    font-family: "Bungee",sans-serif;
+  
+  }
+}
+
+
+
+
+
+@media(min-width: 1024px){
 .new-tweet{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-around;
+  position: absolute;
+  margin-top: 200px;
+  padding: 3em;
+  right:2em;
+  width:50%;
+  display: inline-block;
   font-family: "Source Sans Pro" , sans-serif;
 }
 .write-tweet{
   border:none;
   border-bottom: 3px solid #545149;
   background-color: #f4f1ec;
-  width: 783px;
+  width:100%;
 }
 .tweet-detail{
   margin-top: 20px;
@@ -27,4 +71,5 @@
   
   font-family: "Bungee",sans-serif;
 
+}
 }

@@ -1,3 +1,30 @@
+@media(min-width:768px){
+  .navbar{
+    background-color: coral;
+    color: #ffffff;
+    padding: 30px;
+    font-size: 33px;
+    height:400px;
+    width: 100%;
+    z-index:-1;
+    position:relative;
+    
+  
+  }
+  .tweet{
+    font-size: 22px;
+    float: right;
+    margin-right: 1.5em;
+  }
+  .arrow{
+    float: right;
+    font-size: 20px;
+    color:tomato;
+    margin-right : 72px;
+  }
+  
+}
+@media only screen and (min-width: 1024px){
 .logo{
   font-family: "Bungee",sans-serif;
   margin-left: 1.5em;
@@ -9,9 +36,9 @@
   font-size: 33px;
   height: 100px;
   width: 100%;
-  z-index: 100;
-  position: fixed;
-  top: 0px;
+  z-index:-1;
+  position:relative;
+  
   
   
 }
@@ -25,4 +52,5 @@
   font-size: 20px;
   color:tomato;
   margin-right : 72px;
+}
 }

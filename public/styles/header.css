@@ -1,10 +1,35 @@
-.header{
-  z-index: -1;
-  height: 400px;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  margin-top: 72px;
-  background-image: url("https://www.transparenttextures.com/patterns/arabesque.png");
+
+@media(min-width: 768px){
+
+  .header{
+    display:flex;
+    flex-direction: column;
+    margin-top:-370px;
+    margin-left:250px;
+    text-align: center;
+    z-index:100;
+}
+  .header-content{
+    padding: 20px;
+    text-align: center;
+    
+
+  }
+}
+
+@media(min-width: 1024px){
+    .header {
+    position:absolute;
+    margin-top: 200px;
+    left:0px;
+    display: inline-block;
+}
+  .header-content{
+    background-color: coral;
+    padding: 20px;
+    text-align: center;
+    
+
+  }
+
 }
