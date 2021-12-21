@@ -6,8 +6,9 @@
     font-size: 33px;
     height:400px;
     width: 100%;
-    z-index:-1;
-    position:relative;
+    z-index:100;
+    position:fixed;
+    
     
   
   }
@@ -36,11 +37,9 @@
   font-size: 33px;
   height: 100px;
   width: 100%;
-  z-index:-1;
-  position:relative;
-  
-  
-  
+  z-index:100;
+  position:fixed;
+  margin:0;
 }
 .tweet{
   font-size: 22px;

@@ -2,12 +2,12 @@
 @media(min-width: 768px){
 
   .header{
+    position:relative;
     display:flex;
     flex-direction: column;
-    margin-top:-370px;
-    margin-left:250px;
     text-align: center;
-    z-index:100;
+    z-index:2000;
+    
 }
   .header-content{
     padding: 20px;
@@ -20,8 +20,9 @@
 @media(min-width: 1024px){
     .header {
     position:absolute;
-    margin-top: 200px;
-    left:0px;
+    margin-top:8em;
+    left:10%;
+    z-index:-1;
     display: inline-block;
 }
   .header-content{

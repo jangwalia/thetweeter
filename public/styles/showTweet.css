@@ -1,10 +1,11 @@
 @media (min-width: 768px){
   .tweet-container{
-    margin-top:13em;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     width: 100%;
+    margin-top:10em;
+    z-index: -1;
     
   }
   article{
@@ -67,16 +68,18 @@
 
 @media (min-width: 1024px){
   .tweet-container{
-    margin-top: 400px;
+    position:absolute;
+    margin-top: 20em;
     margin-left: 600px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     width: 50%;
+    z-index:-1;
     
   }
   article{
-  margin-top:3em;
+  margin-top:2em;
   border: 3px solid #545149;
   height: 230px;
   padding: 10px;
