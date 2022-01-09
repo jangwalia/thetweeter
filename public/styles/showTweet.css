@@ -1,4 +1,4 @@
-@media (min-width: 768px){
+@media (max-width: 768px){
   .tweet-container{
     display: flex;
     flex-direction: column;
@@ -16,9 +16,6 @@
     width: 80%;
     margin-left: 3em;
 
-    
-    
-    
   }
   article:hover{
     box-shadow: 10px 5px 5px gold;
@@ -68,12 +65,78 @@
     cursor: pointer;
   }
 }
+@media (min-width: 768px){
+  .tweet-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 100%;
+    margin-top:10em;
+    z-index: -1;
+    
+  }
+  article{
+    margin-top:3em;
+    border: 3px solid #545149;
+    height: 230px;
+    padding: 10px;
+    width: 80%;
+    margin-left: 3em;
 
+  }
+  article:hover{
+    box-shadow: 10px 5px 5px gold;
+  }
+  article header img{
+    height: 40px;
+  }
+  .name{
+    margin-left: 10px;
+  
+  }
+  .email{
+    float: right;
+    color: lightgrey;
+  }
+  article .tweetBody{
+  margin-top:40px;
+  
+  }
+  .error{
+    border:3px solid red;
+    height: 80px;
+    color: tomato;
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+    padding: 20px;
+    display: none;
+  }
+  .show-Tweets{
+    border:none;
+    border-bottom: 3px solid #545149;
+    background-color:#f4f1ec;
+    width: 100%;
+    margin:0 auto;
+  }
+  
+  article footer{
+    font-size: 20px;
+  
+  }
+  .reactions{
+    float: right;
+  }
+  .reactions i:hover{
+    color:gold;
+    cursor: pointer;
+  }
+}
 @media (min-width: 1024px){
   .tweet-container{
     position:absolute;
     margin-top: 20em;
-    margin-left: 500px;
+    margin-left: 39%;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -86,8 +149,8 @@
   border: 3px solid #545149;
   height: 230px;
   padding: 10px;
-  
   width: 80%;
+  margin-left: 9%;
   
   
 }

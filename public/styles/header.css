@@ -1,4 +1,22 @@
 
+@media(max-width: 768px){
+
+  .header{
+    position:relative;
+    display:flex;
+    flex-direction: column;
+    text-align: center;
+    z-index:2000;
+    
+}
+  .header-content{
+    padding: 20px;
+    text-align: center;
+    
+
+  }
+}
+
 @media(min-width: 768px){
 
   .header{
@@ -15,6 +33,7 @@
     
 
   }
+
 }
 
 @media(min-width: 1024px){

@@ -1,3 +1,26 @@
+@media(max-width:768px){
+  .navbar{
+    background-color: coral;
+    color: #ffffff;
+    padding: 7px;
+    font-size:1em;
+    height:400px;
+    width: 100%;
+    z-index:100;
+    position:fixed;
+    
+}
+  .tweet{
+    display:none;
+  }
+  .arrow{
+    float: right;
+    font-size: 20px;
+    color:tomato;
+    margin-right : 72px;
+  }
+  
+}
 @media(min-width:768px){
   .navbar{
     background-color: coral;
@@ -9,9 +32,7 @@
     z-index:100;
     position:fixed;
     
-    
-  
-  }
+}
   .tweet{
     font-size: 22px;
     float: right;

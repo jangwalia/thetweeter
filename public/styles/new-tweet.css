@@ -1,3 +1,39 @@
+@media(max-width:768px){
+  .new-tweet{
+    position: absolute;
+    order:2;
+    margin-top:3em;
+    padding: 3em;
+    width:100%;
+    font-family: "Source Sans Pro" , sans-serif;
+  }
+  .new-tweet .error{
+    display: none;
+  }
+  .write-tweet{
+    border:none;
+    border-bottom: 3px solid #545149;
+    background-color: #f4f1ec;
+    width:80%;
+  }
+  .tweet-detail{
+    margin-top: 2px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .btn{
+    
+    font-family: "Bungee",sans-serif;
+    background-color: #4056A1;
+    color: beige;
+  }
+  .counter{
+    
+    font-family: "Bungee",sans-serif;
+  
+  }
+}
 @media(min-width:768px){
   .new-tweet{
     position: absolute;
@@ -39,12 +75,13 @@
 
 
 
+
 @media(min-width: 1024px){
 .new-tweet{
   position: absolute;
   margin-top: 200px;
   padding: 3em;
-  right:2em;
+  right:11%;
   width:50%;
   display: inline-block;
   font-family: "Source Sans Pro" , sans-serif;
