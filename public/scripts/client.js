@@ -66,7 +66,18 @@ $(document).ready(function () {
   //  SUBMIT THE FORM--POST REQUEST //////////////
 
   $("#form").submit(function (event) {
+    //checkking if the tweet block is empty or exceeds word limit
     event.preventDefault();
+    if($('#tweet-text').val() === null || $('#tweet-text').val() === ''){
+      $('.error span').text("Please enter the tweet...")
+      $('.error').slideDown();
+      return;
+    }
+    if($('#tweet-text').val().length > 140){
+      $('.error span').text("make sure the tweet is under 140 characters..!!")
+      $('.error').slideDown();
+      return;
+    }
     const data = $(this).serialize();
     $.ajax({
       type: "POST",
@@ -77,10 +88,7 @@ $(document).ready(function () {
         loadTweets()
         $('#form')[0].reset();
       },
-      error: function () {
-        $errormessage.text(error.nullError);
-        $('.error').slideDown();
-      }
+      
     });
 
   });
