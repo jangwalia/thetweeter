@@ -6,14 +6,14 @@
     display:flex;
     flex-direction: column;
     text-align: center;
-    z-index:2000;
+    z-index:2;
     
 }
   .header-content{
     padding: 20px;
     text-align: center;
-    
-
+    position:fixed;
+    right: 17%;
   }
 }
 
@@ -24,13 +24,14 @@
     display:flex;
     flex-direction: column;
     text-align: center;
-    z-index:2000;
+    z-index:2;
     
 }
   .header-content{
     padding: 20px;
     text-align: center;
-    
+    position: fixed;
+    right: 28%;
 
   }
 
@@ -40,7 +41,6 @@
     .header {
     position:absolute;
     margin-top:8em;
-    left:10%;
     z-index:-1;
     display: inline-block;
 }
@@ -48,7 +48,7 @@
     background-color: coral;
     padding: 20px;
     text-align: center;
-    
+    right:70%;
 
   }
 
