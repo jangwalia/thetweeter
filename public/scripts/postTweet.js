@@ -11,6 +11,7 @@ $(document).ready(function(){
         success: function(msg){
           
           $('#tweet-text').val('');
+          
     },
     error: function() {
        alert("please enter tweet");

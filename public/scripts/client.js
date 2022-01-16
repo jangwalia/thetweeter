@@ -29,7 +29,9 @@ $(document).ready(function () {
     $.ajax('/tweets', { method: 'GET' })
       .then((res) => {
         renderTweet(res);
+
       })
+      $('#count').text(140);
   }
   loadTweets();
   //ERROR ELEMENT
